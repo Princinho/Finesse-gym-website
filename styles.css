@@ -11,10 +11,12 @@
     --clr-accent: #ff5647;
     --clr-dirty-white: #fafafa;
     --clr-black: #111111;
+    --clr-grey:#ddd;
 }
 
 body {
     color: var(--clr-black);
+    margin-bottom: 0;
 }
 
 img {
@@ -154,7 +156,7 @@ section p {
     object-fit: cover;
     height: 100%;
     object-position: top right;
-    
+
 }
 
 .illustrated-quote p {
@@ -180,20 +182,207 @@ section p {
     left: 1em;
 }
 
-div.transition{
+div.transition {
     min-height: 500px;
     background-image: url("img/move.jpg");
     background-size: cover;
-
     position: relative;
-    display:flex;
+    display: flex;
     align-items: flex-end;
     justify-content: center;
 }
-div.transition span{
-    color:white;
+
+div.transition span {
+    color: white;
     font-size: 4rem;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     font-weight: 800;
+}
+
+.ad-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.ads {
+    background-color: var(--clr-accent);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 80%; */
+    margin: 4em auto;
+    padding: 3em 1em;
+    text-align: center;
+}
+
+.ads span {
+    font-size: 1.2rem;
+}
+
+.ads h3 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: .6em 0;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.btn-sign-me-up {
+    font-family: "Open Sans";
+    font-size: 1.5rem;
+    font-weight: 600;
+    background: white;
+    color: var(--clr-accent);
+    padding: .5em 1em;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+section.philosophy {
+    padding: 0;
+    background-color: var(--clr-accent);
+}
+
+section.philosophy>h1 {
+    color: white;
+    /* display: block; */
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.2em;
+    padding: 1em 1.5em 4em;
+}
+
+section.philosophy main {
+    background-color: var(--clr-primary);
+    color: white;
+}
+
+section.philosophy main .wrapper {
+    position: relative;
+    top: -10em;
+}
+
+.wrapper .sub-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    text-align: center;
+}
+
+.wrapper .sub-section p {
+    font-style: italic;
+}
+
+.wrapper .sub-section h2 {
+    text-transform: uppercase;
+    margin-top: 1em;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: .06em;
+}
+
+.philosophy img {
+    border-radius: 50%;
+    width: 16em;
+    height: 16em;
+    border: .5em solid white;
+    object-fit: cover;
+}
+
+.philosophy .learn-more {
+    margin-top: 1em;
+    background-color: var(--clr-accent);
+    color: white;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: .5em 1em;
+
+}
+.team{
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+.team h1{
+    font-size: 3rem;
+    font-weight: lighter;
+    color: var(--clr-accent);
+    text-transform: uppercase;
+}
+.team h1 span{
+    font-weight: 400;
+}
+.team-images {
+    min-width: 90%;
+    display: grid;
+    width: fit-content;
+    margin: 0 auto;
+    /* grid-template-columns: 1fr; */
+    grid-template-columns: repeat(auto-fill, minmax(80px, 300px));
+    place-content: center;
+    gap: .5em;
+}
+.team-member{
+    object-fit: cover;
+    height: 300px;
+    object-position: top right;
+}
+.social-links{
+    display: flex;
+    min-height: 3em;
+    /* min-width: 2em; */
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+.social-link{
+    min-width: 3em;
+}
+footer{
+    background-color: var(--clr-accent);
+}
+footer .title{
+    padding: 2em;
+    text-align: center;
+    color: white;
+
+}
+footer .title h1{
+    font-weight: 400;
+}
+footer .title p{
+    font-weight: 200;
+    font-size: 1.2em;
+    padding-top: 2em;
+    padding-bottom: 10em;
+}
+.contact-options{
+    background-color: var(--clr-primary);
+    padding: 2em;
+    position: relative;
+    /* top:-8em; */
+    padding-bottom: 18em;
+    margin-bottom: 2em;
+}
+.contact{
+    background:white;
+    padding: 2em;
+    margin:1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact .icon{
+    width: 6em;
+    border-radius: 50%;
+    border: .2em solid var(--clr-grey);
+    padding: 1em;
 }
