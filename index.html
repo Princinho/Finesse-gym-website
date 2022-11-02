@@ -26,14 +26,25 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <header class="header">
-        <nav class="main-nav">
+    <header class="header" id="header">
+        <div class="main-nav">
             <img class="logo" alt="finesse gym logo" src="img/finesse-logo.svg" />
-            <i class="ri-menu-line menu-toggle"></i>
-        </nav>
+            <i class="ri-menu-line menu-toggle" onclick="showNav()"></i>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#header" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#join" class="nav-link">Rejoignez nous!</a></li>
+                    <li class="nav-item"><a href="#offers" class="nav-link">Nos offres</a></li>
+                    <li class="nav-item"><a href="#philosophy" class="nav-link">Philosophie</a></li>
+                    <li class="nav-item"><a href="#team" class="nav-link">L'equipe parfaite</a></li>
+                    <li class="nav-item"><a href="#location" class="nav-link">Ou sommes nous?</a></li>
+                    <li class="nav-item"><a href="#footer" class="nav-link">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <div class="hero">
+        <div class="hero" id="hero">
             <div class="hero-text-content">
                 <h1 class="intro">
                     Finesse GYM
@@ -43,10 +54,10 @@
                 </span>
                 <span class="light-text">Envie d'essayer?</span>
             </div>
-            
+
             <img class="splash-img" src="/img/girl-earbuds.jpg">
         </div>
-        <section class="join-today">
+        <section class="join-today" id="join">
             <div class="join-today-wrapper">
                 <h1 class="section-title">Join today</h1>
                 <h3 class="next-step">Ready to take the next step?</h2>
@@ -68,21 +79,21 @@
                         </ul>
                     </div>
             </div>
-            
-                
-                <div class="illustrated-quote">
-                    <div class="illustration"><img src="img/drinking.jpg" alt="top less man drinking and smiling"></div>
 
-                    <p class="quote-text">The ability to help so many people reach their goals—it's the most awesome
-                        experience I've ever
-                        had</p>
-                </div>
+
+            <div class="illustrated-quote">
+                <div class="illustration"><img src="img/drinking.jpg" alt="top less man drinking and smiling"></div>
+
+                <p class="quote-text">The ability to help so many people reach their goals—it's the most awesome
+                    experience I've ever
+                    had</p>
+            </div>
         </section>
 
         <div class="transition">
             <span>Move!</span>
         </div>
-        <section class="transition-offers" >
+        <section class="transition-offers">
             <div class="ads">
                 <span>Come see for yourself with a</span>
                 <h3 class="highlight">Free class pass</h3>
@@ -97,7 +108,7 @@
 
         </section>
 
-        <section class="philosophy">
+        <section class="philosophy" id="philosophy">
             <h1>Our philosophy</h1>
             <main>
                 <div class="wrapper">
@@ -128,7 +139,7 @@
             </main>
 
         </section>
-        <section class="team">
+        <section class="team" id="team">
 
             <div>
                 <div class="social-links">
@@ -171,7 +182,32 @@
             </div>
 
         </section>
-        <footer>
+        <section class="maps-location" id="location">
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="100%" height="800px" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=6.168562617006273,%201.228445661342702&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <!-- <a href="https://putlocker-is.org">putlocker</a><br> -->
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            height: 800px;
+                            width: 100%;
+                        }
+                    </style><a href="https://www.embedgooglemap.net"></a>
+                    <style>
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 800px;
+                            width: 100%;
+                        }
+                    </style>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
 
             <div class="title">
                 <h1>Get in Touch!</h1>

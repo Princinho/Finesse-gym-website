@@ -7,6 +7,8 @@
 }
 
 :root {
+    --clr-primary-light-transparent: #2a3d65ba;
+    --clr-primary-dark-transparent: #1b2d54de;
     --clr-primary: #2a3d65;
     --clr-accent: #ff5647;
     --clr-dirty-white: #fafafa;
@@ -14,13 +16,41 @@
     --clr-grey: #ddd;
 }
 
-body {
-    color: var(--clr-black);
-    margin-bottom: 0;
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
 }
 
 img {
     width: 100%;
+}
+
+body {
+    color: var(--clr-black);
+    margin-bottom: 0;
+    scroll-behavior: smooth;
+}
+
+body nav {
+    opacity: 0;
+    visibility: hidden;
+    right: -20000px;
+    transition: all 300ms;
+}
+body.nav-shown .main-nav nav {
+    opacity: 1;
+    visibility: visible;
+    right: 0;
+}
+.menu-toggle{
+    cursor: pointer;
+    position: fixed;
+    z-index: 4;
+    right: 1em;
+    background-color: white;
+    padding: .5em 1em;
 }
 
 .main-nav {
@@ -29,6 +59,38 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
+}
+
+.main-nav nav {
+    background-color: var(--clr-primary-light-transparent);
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-width: 30vw;
+    min-height: 100vh;
+    z-index: 4;
+}
+
+.main-nav ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+
+.main-nav nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1em .5em;
+    display: inline-block;
+    width: 100%;
+}
+
+.main-nav a:hover {
+    background-color: var(--clr-primary-dark-transparent);
 }
 
 .main-nav img {
@@ -79,7 +141,8 @@ main {
     margin-top: 3em;
 }
 
-section,.join-today-wrapper {
+section,
+.join-today-wrapper {
     margin-top: 3rem;
     padding-inline: 4em;
     display: flex;
@@ -484,14 +547,15 @@ footer .title p {
     }
 
     .tools {
-        
+
         position: relative;
         align-self: stretch;
         display: grid;
         place-content: center;
         width: 100%;
     }
-    .tools img{
+
+    .tools img {
         position: relative;
         top: 1em;
         z-index: 3;
@@ -501,7 +565,8 @@ footer .title p {
         width: 100%;
         text-align: center;
     }
-    section.philosophy main .wrapper{
+
+    section.philosophy main .wrapper {
         top: -7em;
     }
 
@@ -524,25 +589,31 @@ footer .title p {
     .philosophy .wrapper h1 {
         font-size: 2.5em;
     }
-    section.join-today{
+
+    section.join-today {
         flex-direction: row;
     }
-    .hero{
+
+    .hero {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
-    .hero-text-content{
+
+    .hero-text-content {
         width: 40%;
     }
-    .splash-img{
+
+    .splash-img {
         width: 40%;
     }
+
     .philosophy .wrapper img {
         width: 16em;
         height: 16em;
     }
-    section.philosophy main .wrapper{
+
+    section.philosophy main .wrapper {
         top: -10em;
     }
 }
