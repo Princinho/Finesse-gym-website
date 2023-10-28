@@ -211,6 +211,7 @@ section p {
 .features-wrapper {
     display: flex;
     flex-direction: column;
+    margin-top: 1em;
 }
 
 .features {
@@ -283,6 +284,7 @@ div.transition span {
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     font-weight: 800;
+    text-shadow: 2px 2px 6px #1a1919;
 }
 
 .transition-offers {
@@ -534,7 +536,8 @@ footer .title p {
 
 @media (min-width:800px) {
     .contacts-wrapper {
-        display: flex;
+        /* display: flex; */
+        flex-direction: row;
     }
 
     .transition-offers {
