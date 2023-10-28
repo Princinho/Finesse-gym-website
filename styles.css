@@ -127,11 +127,7 @@ main {
 
 }
 
-body>main {
-    overflow: auto;
-    scroll-snap-type: y mandatory;
-    max-height: 100vh;
-}
+
 
 
 
@@ -660,9 +656,7 @@ footer .title p {
 
     section.philosophy main .wrapper {
         top: -7em;
-    }
-
-    .philosophy .wrapper {
+        
         display: flex;
         flex-direction: row;
         justify-content: space-around;
