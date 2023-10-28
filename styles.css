@@ -118,6 +118,9 @@ body.nav-shown .main-nav nav {
 
 main {
     background-color: #fafafa;
+    overflow: auto;
+    scroll-snap-type: y proximity;
+    max-height: 100vh;
 }
 
 .hero {
@@ -164,7 +167,9 @@ section,
     align-items: center;
     background-color: white;
 }
-
+section{
+    scroll-snap-align: start;
+}
 .section-title {
     text-transform: uppercase;
     color: var(--clr-accent);
