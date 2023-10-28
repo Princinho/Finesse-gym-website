@@ -498,6 +498,8 @@ footer .title p {
     /* border: 5px solid white; */
     position: relative;
     top: -10em;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .contact {
@@ -515,7 +517,9 @@ footer .title p {
     border: .2em solid var(--clr-grey);
     padding: 1em;
 }
-
+.contact a{
+    color: var(--clr-accent);
+}
 @media(min-width:650px) {
     .features-wrapper {
         flex-direction: row;
