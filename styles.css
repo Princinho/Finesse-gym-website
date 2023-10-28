@@ -7,13 +7,13 @@
 }
 
 :root {
-    --clr-primary-light-transparent: #2a3d65ba;
+    /* --clr-primary-light-transparent: #2a3d65ba;
     --clr-primary-dark-transparent: #1b2d54de;
     --clr-primary: #2a3d65;
     --clr-accent: #ff5647;
     --clr-dirty-white: #fafafa;
     --clr-black: #111111;
-    --clr-grey: #ddd;
+    --clr-grey: #ddd; */
     /* DDAC05
 E2AC05
 859AAE
@@ -21,6 +21,7 @@ E2AC05
 E9C652 */
 --clr-primary-light-transparent: rgba(42, 61, 101, 0.8);
 --clr-primary-dark-transparent: rgba(27, 45, 84, 0.87);
+--clr-primary-dark: rgba(27, 45, 84);
 --clr-primary: #E1B100; /* Brighter yellow */
 --clr-accent: #DD9B05; /* Slightly muted yellow */
 --clr-dirty-white: #f5f5f5; /* Slightly off-white */
@@ -107,6 +108,7 @@ body.nav-shown .main-nav nav {
 
 .main-nav img {
     height: 100%;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
@@ -341,7 +343,7 @@ section.philosophy>h1 {
 }
 
 section.philosophy main {
-    background-color: var(--clr-primary);
+    background-color: var(--clr-primary-dark);
     color: white;
 }
 
@@ -410,6 +412,7 @@ section.philosophy main .wrapper {
 .team-images {
     min-width: 90%;
     display: grid;
+    width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto;
     /* grid-template-columns: 1fr; */
@@ -488,7 +491,7 @@ footer .title p {
 }
 
 .contact-options {
-    background-color: var(--clr-primary);
+    background-color: var(--clr-primary-dark);
     padding: 2em;
     position: relative;
     /* top:-8em; */
@@ -548,7 +551,7 @@ footer .title p {
         position: absolute;
         width: 40%;
         height: 90%;
-        background-color: var(--clr-primary-dark-transparent);
+        background-color: var(--clr-primary-dark);
         z-index: 1;
     }
 
