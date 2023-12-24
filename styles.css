@@ -112,6 +112,10 @@ body.nav-shown .main-nav nav {
     background-color: var(--clr-primary-dark-transparent);
 }
 
+a:hover {
+    color: var(--clr-primary-dark-transparent);
+}
+
 .main-nav img {
     height: 100%;
     width: -moz-fit-content;
@@ -138,9 +142,9 @@ body {
     min-height: 100vh;
     position: relative;
     width: 100%;
-  }
-  
-  body::before {
+}
+
+body::before {
     animation: bounce 1s ease infinite;
     bottom: 6rem;
     color: #ccc;
@@ -155,13 +159,13 @@ body {
     position: absolute;
     text-align: center;
     width: 6rem;
-  }
-  
-  @keyframes bounce {
+}
+
+@keyframes bounce {
     50% {
-      transform: translateY(-50%);
+        transform: translateY(-50%);
     }
-  }
+}
 
 
 
@@ -591,6 +595,10 @@ footer .title p {
     color: var(--clr-accent);
 }
 
+.contact a:hover {
+    color: var(--clr-primary-dark);
+}
+
 @media(min-width:650px) {
     .features-wrapper {
         flex-direction: row;
@@ -656,7 +664,7 @@ footer .title p {
 
     section.philosophy main .wrapper {
         top: -7em;
-        
+
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -677,9 +685,10 @@ footer .title p {
 }
 
 @media (min-width:1000px) {
-    body::before{
+    body::before {
         content: '';
     }
+
     .philosophy .wrapper h1 {
         font-size: 2.5em;
     }
